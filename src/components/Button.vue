@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         onClick() {
-            alert('Click');
+            this.$emit('btn-click');
         }
     },
 }
