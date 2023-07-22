@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" :style="{ background: color }">
+    <button class="btn" :style="{ background: color }" @click="onClick()">
         {{ text }}
     </button>
 </template>
@@ -11,6 +11,11 @@ export default {
     props: {
         text: String,
         color: { type: String, default: 'grey' },
+    },
+    methods: {
+        onClick() {
+            alert('Click');
+        }
     },
 }
 
